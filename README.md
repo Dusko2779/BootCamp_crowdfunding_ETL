@@ -9,6 +9,9 @@ Although you and your partner will divide the work, it’s essential to collabor
 ### Instructions
 The instructions for this mini project are divided into the following subsections:
 
+![image](https://github.com/Dusko2779/Boot_Camp_Crowdfunding_ETL/assets/134830906/484d5580-cc3e-4c30-b635-b121a6b70e64)
+
+
 Create the Category and Subcategory DataFrames
 Create the Campaign DataFrame
 Create the Contacts DataFrame
@@ -20,9 +23,9 @@ A "category_id" column that has entries going sequentially from "cat1" to "catn"
 
 A "category" column that contains only the category titles
 
-The following image shows this category DataFrame:
 
-category DataFrame
+![image](https://github.com/Dusko2779/Boot_Camp_Crowdfunding_ETL/assets/134830906/c14d2342-6db4-4e3d-b661-0781a9ef1e3f)
+
 
 Export the category DataFrame as category.csv and save it to your GitHub repository.
 
@@ -69,20 +72,17 @@ The "category_id" column, with unique identification numbers matching those in t
 
 The "subcategory_id" column, with the unique identification numbers matching those in the "subcategory_id" column of the subcategory DataFrame
 
-The following image shows this campaign DataFrame:
+![image](https://github.com/Dusko2779/Boot_Camp_Crowdfunding_ETL/assets/134830906/e3af4841-6332-4357-b531-89ae2313a1f8)
 
-campaign DataFrame
 
 Export the campaign DataFrame as campaign.csv and save it to your GitHub repository.
 
 ### Create the Contacts DataFrame
 Choose one of the following two options for extracting and transforming the data from the contacts.xlsx Excel data:
 
-Option 1: Use Python dictionary methods.
+Use Python dictionary methods.
 
-Option 2: Use regular expressions.
-
-If you chose Option 1, complete the following steps:
+Complete the following steps:
 
 Import the contacts.xlsx file into a DataFrame.
 Iterate through the DataFrame, converting each row to a dictionary.
@@ -92,15 +92,9 @@ Add the values for each row to a new list.
 Create a new DataFrame that contains the extracted data.
 Split each "name" column value into a first and last name, and place each in a new column.
 Clean and export the DataFrame as contacts.csv and save it to your GitHub repository.
-If you chose Option 2, complete the following steps:
 
-Import the contacts.xlsx file into a DataFrame.
-Extract the "contact_id", "name", and "email" columns by using regular expressions.
-Create a new DataFrame with the extracted data.
-Convert the "contact_id" column to the integer type.
-Split each "name" column value into a first and a last name, and place each in a new column.
-Clean and then export the DataFrame as contacts.csv and save it to your GitHub repository.
-Check that your final DataFrame resembles the one in the following image:
+![image](https://github.com/Dusko2779/Boot_Camp_Crowdfunding_ETL/assets/134830906/f76de456-1661-43a1-9571-ed61404fea9d)
+
 
 ### Create the Crowdfunding Database
 
@@ -108,16 +102,17 @@ Inspect the four CSV files, and then sketch an ERD of the tables by using QuickD
 
 Use the information from the ERD to create a table schema for each CSV file.
 
-Note: Remember to specify the data types, primary keys, foreign keys, and other constraints.
-
-Save the database schema as a Postgres file named crowdfunding_db_schema.sql, and save it to your GitHub repository.
-
 Create a new Postgres database, named crowdfunding_db.
 
 Using the database schema, create the tables in the correct order to handle the foreign keys.
+
+![image](https://github.com/Dusko2779/Boot_Camp_Crowdfunding_ETL/assets/134830906/e051c49f-cf1f-4400-bafa-14e599a03500)
+
 
 Verify the table creation by running a SELECT statement for each table.
 
 Import each CSV file into its corresponding SQL table.
 
 Verify that each table has the correct data by running a SELECT statement for each.
+![image](https://github.com/Dusko2779/Boot_Camp_Crowdfunding_ETL/assets/134830906/73414bf5-ed2a-495c-997e-c28c6587bf80)
+
